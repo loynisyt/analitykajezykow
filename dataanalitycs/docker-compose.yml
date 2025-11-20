@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: frontend
+    working_dir: /app
+    build:
+      context: ./dataanalytics
+      dockerfile: Dockerfile
+    volumes:
+      - ./dataanalytics:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    command: npm run dev
+    restart: unless-stopped
