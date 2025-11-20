@@ -1,0 +1,9 @@
+@import 'bulma/css/bulma.css';
+*{
+  margin : 0 ;
+  
+}
+body{
+  padding-bottom: 0 !important;
+}
+

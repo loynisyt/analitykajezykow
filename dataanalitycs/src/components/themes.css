@@ -1,0 +1,203 @@
+/* CSS Variables for Language Themes */
+:root {
+  --dark: #0f0f23;
+  /* Java Theme */
+  --java-primary: #bd7c13;
+  --java-secondary: #dc143c;
+  --java-bg: linear-gradient(135deg, #ed8b00 0%, #dc143c 50%, #0f0f23 100%);
+  --java-icon: #ed8b00;
+  --java-button: #69481a;
+  --java-hover-shadow: rgba(237, 139, 0, 0.3);
+
+  /* PHP Theme */
+  --php-primary: #777bb4;
+  --php-secondary: #4b0082;
+  --php-bg: linear-gradient(135deg, #777bb4 0%, #4b0082 50%, #0f0f23 100%);
+  --php-icon: #777bb4;
+  --php-button: #30b5ea;
+  --php-hover-shadow: rgba(119, 123, 180, 0.3);
+
+  /* Python Theme */
+  --python-primary: #3776ab;
+  --python-secondary: #ffd43b;
+  --python-bg: linear-gradient(135deg, #3776ab 0%, #ffd43b 50%, #0f0f23 100%);
+  --python-icon: #ffd43b;
+  --python-button: #ffd43b;
+  --python-hover-shadow: rgba(255, 212, 59, 0.3);
+
+  /* JavaScript Theme */
+  --javascript-primary: #f7df1e;
+  --javascript-secondary: #000;
+  --javascript-bg: linear-gradient(135deg, #f7df1e 0%, #000 50%, #0f0f23 100%);
+  --javascript-icon: #f7df1e;
+  --javascript-button: #f7df1e;
+  --javascript-hover-shadow: rgba(247, 223, 30, 0.3);
+}
+
+/* Common Styles */
+.page-grid {
+  max-width: 1200px;
+}
+
+.page-title {
+  color: #fff;
+}
+
+.card-title {
+  color: #fff;
+  margin-bottom: 16px !important;
+}
+
+.card-text {
+  color: #fff ;
+  margin-bottom: 16px !important;
+}
+
+.theme-card {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Java Theme Styles */
+.java-page {
+  min-height: 100vh;
+  background: var(--java-bg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.java-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5) ;
+}
+
+.java-icon {
+  font-size: 50px !important;
+  color: var(--java-icon);
+  margin-right: 16px;
+}
+
+.java-card:hover {
+  box-shadow: 0 8px 32px var(--java-hover-shadow);
+}
+
+.java-button {
+  color: var(--java-button) !important;
+  border-color: var(--java-button) !important;
+    border: 3px solid !important;
+
+}
+
+/* PHP Theme Styles */
+.php-page {
+  min-height: 100vh;
+  background: var(--php-bg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.php-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.php-icon {
+  font-size: 60px !important;
+  color: var(--php-icon);
+  margin-right: 16px;
+}
+
+.php-card:hover {
+  box-shadow: 0 8px 32px var(--php-hover-shadow) !important;
+}
+.php-button {
+  color: var(--php-button) !important;
+  border-color: var(--php-button) !important;
+    border: 3px solid !important;
+
+}
+.java-diagram {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Python Theme Styles */
+.python-page {
+  min-height: 100vh;
+  background: var(--python-bg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.python-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.python-icon {
+  font-size: 60px !important;
+  color: var(--python-icon);
+  margin-right: 16px;
+}
+
+.python-card:hover {
+  box-shadow: 0 8px 32px var(--python-hover-shadow)!important;
+}
+
+.python-button {
+  color: var(--python-button);
+  border-color: var(--python-button);
+  border: 3px solid !important;
+}
+
+/* JavaScript Theme Styles */
+.javascript-page {
+  min-height: 100vh;
+  background: var(--javascript-bg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.javascript-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.javascript-icon {
+  font-size: 80px !important;
+  color: var(--javascript-icon);
+  margin-right: 16px;
+}
+
+.javascript-card:hover {
+  box-shadow: 0 8px 32px var(--javascript-hover-shadow);
+}
+
+.javascript-button {
+  color: var(--javascript-button)!important;
+  border-color: var(--javascript-button) !important;
+    border: 3px solid !important;
+
+}
