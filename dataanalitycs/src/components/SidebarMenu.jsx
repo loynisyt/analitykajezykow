@@ -9,18 +9,27 @@ import {
   ListItemText,
   Box,
 } from '@mui/material';
-import { Code, LocalCafe, Javascript, Terminal, Home } from '@mui/icons-material';
+
+import HomeIcon from '@mui/icons-material/Home';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
+import LanguageIcon from '@mui/icons-material/Language';//percepcja
+import SettingsIcon from '@mui/icons-material/Settings';//funkcjonalnosc
+import CallIcon from '@mui/icons-material/Call';//zrozumialssc
+import GppGoodIcon from '@mui/icons-material/GppGood';//rzeatelnsc
 
 const SidebarMenu = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
   const menuItems = [
-    { text: 'Home', icon: <Home />, path: '/' },
-    { text: 'Python', icon: <Code />, path: '/python' },
-    { text: 'Java', icon: <LocalCafe />, path: '/java' },
-    { text: 'JavaScript', icon: <Javascript />, path: '/javascript' },
-    { text: 'PHP', icon: <Terminal />, path: '/php' },
+    { text: 'Home', icon: <HomeIcon />, path: '/' },
+    { text: 'Percepcja', icon: <ArrowForwardIosIcon />, path: '/percepcja' },
+    { text: 'Funkcjonalność', icon: <ArrowForwardIosIcon />, path: '/funkcjonalnosc' },
+    { text: 'Zrozumiałość', icon: <ArrowForwardIosIcon />, path: '/zrozumialosc' },
+    { text: 'Rzetelność', icon: <ArrowForwardIosIcon />, path: '/rzetelnosc' },
+
   ];
 
   const handleNavigate = (path) => {

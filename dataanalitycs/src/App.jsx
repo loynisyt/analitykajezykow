@@ -6,20 +6,19 @@ import Dock from './components/Dock';
 import PythonIcon from "./assets/Python.svg";
 import JavaIcon from "./assets/Java.svg";
 import JSIcon from "./assets/JavaScript.svg";
-import PHPIcon from "./assets/PHP.svg";
 import HomeIcon from  "./assets/Home.svg";
 
 
 const items = [
     { 
       icon: <img src={PythonIcon} alt="Python" style={{ width: 28, height: 28 }} />, 
-      label: 'Python', 
-      onClick: () =>  window.location.href = '/python'
+      label: 'Percepcja', 
+      onClick: () =>  window.location.href = '/percepcja'
     },
     { 
       icon: <img src={JavaIcon} alt="Java" style={{ width: 28, height: 28 }} />, 
-      label: 'Java', 
-      onClick: () =>  window.location.href = '/java'
+      label: 'Funkcjonalnosc', 
+      onClick: () =>  window.location.href = '/funkcjonalnosc'
     },
      { 
       icon: <img src={HomeIcon} alt="Home" style={{ width: 28, height: 28 }} />, 
@@ -28,14 +27,15 @@ const items = [
     },
     { 
       icon: <img src={JSIcon} alt="JavaScript" style={{ width: 28, height: 28 }} />, 
-      label: 'JavaScript', 
-      onClick: () =>  window.location.href = '/javascript'
+      label: 'Zrozumiałość ', 
+      onClick: () =>  window.location.href = '/zrozumialosc'
     },
-    { 
-      icon: <img src={PHPIcon} alt="PHP" style={{ width: 28, height: 28 }} />, 
-      label: 'PHP', 
-      onClick: () =>  window.location.href = '/php'
-    }
+     { 
+      icon: <img src={JSIcon} alt="JavaScript" style={{ width: 28, height: 28 }} />, 
+      label: 'Rzetelność', 
+      onClick: () =>  window.location.href = '/rzetelnsoc'
+    },
+
   ];
 
   

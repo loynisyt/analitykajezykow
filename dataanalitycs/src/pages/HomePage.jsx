@@ -7,29 +7,26 @@ const HomePage = () => {
 
   const items = [
     {
-      title: 'Python',
-      icon: <Code sx={{ fontSize: 60, color: '#3776ab' }} />,
+      title: 'Percepcja',
       color: '#3776ab',
-      path: '/python',
+      path: '/percepcja',
     },
     {
-      title: 'Java',
-      icon: <LocalCafe sx={{ fontSize: 60, color: '#ed8b00' }} />,
+      title: 'Funkcjonalnosc',
       color: '#ed8b00',
-      path: '/java',
+      path: '/funkcjonalnosc',
     },
     {
-      title: 'JavaScript',
-      icon: <Javascript sx={{ fontSize: 60, color: '#f7df1e' }} />,
+      title: 'Zrozumialosc',
       color: '#f7df1e',
-      path: '/javascript',
+      path: '/zrozumialosc',
     },
     {
-      title: 'PHP',
-      icon: <Terminal sx={{ fontSize: 60, color: '#777bb4' }} />,
-      color: '#777bb4',
-      path: '/php',
-    },
+      title: 'Rzetelnosc',
+      color: '#2fb823',
+      path: '/rzetelnosc',
+    }
+
   ];
 
   return (
@@ -53,7 +50,7 @@ const HomePage = () => {
           textShadow: '0 0 20px rgba(255,255,255,0.5)',
         }}
       >
-        Panel do Analizy języków programowania
+        Zasady WCAG
       </Typography>
       <Grid container spacing={4} sx={{ maxWidth: 800 }}>
         {items.map((item) => (
